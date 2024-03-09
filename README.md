@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []([https://your-solution-url.com]())
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-solution-E0rYeRUYma](https://www.frontendmentor.io/solutions/nft-preview-card-solution-E0rYeRUYma))
 - Live Site URL: [https://nftcardlol.netlify.app/](https://nftcardlol.netlify.app/)
 
 ## My process
@@ -40,5 +40,5 @@ Users should be able to:
 - Flexbox
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Gagan1201](https://www.frontendmentor.io/profile/Gagan1201)
+- Twitter - [@gagan_1201](https://twitter.com/gagan_1201)
