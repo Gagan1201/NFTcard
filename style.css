@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-1: hsl(215, 51%, 70%);
+    --primary-2: hsl(178, 100%, 50%);
+    --neut-dark-1: hsl(217, 54%, 11%);
+    --neut-dark-2: hsl(216, 50%, 16%);
+    --neut-dark-3: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --fs: 1.125rem;
+    --fw-light: 300;
+    --fw-med: 400;
+    --fw-bold: 600;
+}
+
+body{
+    font-family: 'Outfit';
+    font-size: var(--fs);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neut-dark-1);
+}
+
+.outer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 375px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--neut-dark-2);
+    gap: 1.25rem;
+    
+}
+
+.shadower {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    border-radius: 2.5rem;
+    height: 100%;
+    width: 100%;
+    box-shadow: 15px 35px hsla(217, 56%, 8%, 0.5), -15px 35px hsl(215, 57%, 8%, 0.5), -45px 65px hsl(216, 55%, 10%), 45px 65px hsl(216, 55%, 10%), -45px -20px hsl(216, 55%, 10%), 45px -20px hsl(216, 55%, 10%);
+}
+
+.image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.eye{
+    position: absolute;
+    opacity: 0;
+}
+
+.image:hover .eye{
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0%;
+    border-radius: 0.8rem;
+    transition: opacity 0.2s ease-out;
+}
+
+.box:hover{
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+    opacity: 40%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content h1{
+    display: inline;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: var(--fw-bold);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--primary-2);
+}
+
+.content p{
+    color: var(--primary-1);
+    font-weight: var(--fw-light);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .eth {
+    display: flex;
+    font-weight: var(--fw-bold);
+    color: var(--primary-2);
+    align-items: center;
+    gap: 0.5rem
+}
+
+.info .clock {
+    display: flex;
+    color: var(--primary-1);
+    align-items: center;
+    gap: 0.5rem
+}
+
+hr {
+    border: 0.1px solid var(--neut-dark-3);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-1);
+    font-weight: var(--fw-light);
+}
+
+.author img {
+    width: 2.75rem;
+    border: 0.5px solid var(--white);
+    border-radius: 1000px;
+}
+
+.authorname {
+    color: var(--white);
+    font-weight: var(--fw-med);
+}
+
+.authorname:hover{
+    color: var(--primary-2);
+    cursor: pointer;
+}
